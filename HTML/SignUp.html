@@ -1,0 +1,48 @@
+<html dir = "ltr" lang = "en-us">
+    <head>
+    </head>
+    <body>
+        <!-- Link to the home page-->
+        <nav role="navigation" aria-label="main menu" style="border:1px solid #ccc">
+            <ul class="navbar">
+                <li><a href="../Index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sign-up details, needing a name, email and password-->
+        <form action="MainPage.html" style="border:1px solid #ccc">
+            <div class = "container"> <!-- section for filling in the required details-->
+                
+                <h1>Sign Up</h1>
+                <p>
+                    Please fill out the details below to create an account:
+                </p>
+
+                <label for="name"><b>Name</b></label>
+                <Input type="text" placeholder="Enter your name" name="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <Input type="email" placeholder="me@example.com" name="email" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <Input type="password" placeholder="Enter password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <Input type="password" placeholder="Repeat password" name="psw-repeat" required>
+                
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remeber me
+                </label>
+            </div>
+
+            <div class="clearfix"> <!-- section for buttons, either reset inputs or submit them-->
+                <button type="reset" class="cancelbtn">Reset</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+
+            <div class="container signin"> <!-- section for going back to home page, if already has an account -->
+                <p>Already have an account? <a href="../Index.html">Sign in</a>.</p>
+            </div>
+        </form>
+    </body>
+</html>

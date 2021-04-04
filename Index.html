@@ -1,0 +1,35 @@
+<html dir = "ltr" lang = "en-us">
+    <head>
+        <!-- Adding meta details-->
+        <title>
+            ProMent - Project Management
+        </title>
+        <meta charset = "utf-8"> 
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    </head>
+    <body> <!-- Where the main body of the index page will go-->
+        <main>
+            <div class="Index header" style="border:1px solid #ccc"> <!-- The page header-->
+                <h1>Welcome to ProMent - A Project Management Website</h1>
+                
+            </div>
+
+            <!-- For the sign-in details, will send to the main page-->
+            <form action="HTML/MainPage.html" style="border:1px solid #ccc">
+                <h3>Please Sign-In:</h3>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="me@example.com" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="enter password" name="psw" required>
+                <button>Sign In</button>
+            </form>
+
+            <!-- If doesn't already have an account, send to the sign-up page-->
+            <form action="HTML/SignUp.html">
+                <button>Sign Up</button>
+            </form>
+        </main>
+    </body>
+</html>
