@@ -1,5 +1,18 @@
+<!DOCTYPE html>
 <html dir = "ltr" lang = "en-us">
     <head>
+        <!-- Adding meta details-->
+        <title>
+            Main Page
+        </title>
+        <meta charset = "utf-8"> 
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> <!-- Adding google font Poppins-->
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+        crossorigin="anonymous" /> <!-- Adding cool image style font -->
+        <link rel="stylesheet" href="../CSS/Style.css">
     </head>
     <body>
         <!-- Link to the home page-->
@@ -10,8 +23,51 @@
         </nav>
 
         <!-- Message on the main page-->
-        <h1>
-            Congratulations for making it to the Main page!
-        </h1>
+        <header>
+            <h1>
+                Congratulations for making it to the Main page!
+            </h1>
+        </header>
+        
+
+        <!-- list of text boxes for users to add information-->
+        <form>
+        <div class="jobs" class="enter-job">
+            <h2>Enter your next job to do:</h2>
+            
+            <div class = "entries">
+                <Input type="text" placeholder="Enter Job" name="job">
+                <button>Enter</button>
+            </div>
+
+            
+        </div>
+
+        <div class="jobs" class="jobs-started">
+            <h2>Started:</h2>
+            <div class = "entries">
+
+            </div>
+
+        </div>
+
+        <div class="jobs" class="jobs-review">
+
+            <h2>Review:</h2>
+
+            <div class = "entries">
+                
+            </div>
+        </div>
+
+        <div class="jobs" class="jobs-completed">
+
+            <h2>Completed:</h2>
+
+            <div class = "entries">
+                
+            </div>
+        </div>
+        </form>
     </body>
 </html>
