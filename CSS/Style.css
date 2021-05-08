@@ -58,3 +58,13 @@ form button {
   width: 40vh;
   border: 1px solid black;
 }
+/* Jobs that Appear */
+.job-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-list {
+  color: black;
+  list-style: none;
+}
