@@ -55,6 +55,7 @@ function onDragStart(event) {
     event.dataTransfer.setData('text/plain', event.target.id);
     console.log(event.currentTarget);
     //event.currentTarget.style.backgroundColor = 'red';
+    //event.target.classList.add('dragging');
 }
 
 function onDragOver(event) {
@@ -68,6 +69,8 @@ function dropItem(event){
 }
 
 function onDrop(event) {
+    //event.target.classList.remove('dragging');
+
     const id = event.dataTransfer.getData('Text');
 
     const draggableElement = document.getElementById(id);

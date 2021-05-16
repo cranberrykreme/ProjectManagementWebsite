@@ -42,6 +42,14 @@ form button {
 /*-------------------- SignUp File ------------------*/
 
 /*-------------------- MainPage File ------------------*/
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 80px;
+  justify-content: left;
+}
 .jobs {
   padding: 1.5rem;
   padding-top: 0rem;
@@ -56,7 +64,7 @@ form button {
   padding: 10px;
 }
 .entries .job-list {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   min-height: 50vh;
@@ -64,6 +72,9 @@ form button {
   width: 40vh;
   border: 1px solid black;
   overflow: auto;
+}
+#start {
+  max-height: 20vh;
 }
 button {
   border: 1px solid black;
@@ -93,18 +104,23 @@ button:hover {
   border-radius: 5px;
   padding: 0.5rem;
   margin: 0.5rem;
+  background: white;
+  opacity: 1;
 }
 .job-item:hover {
   background: grey;
 }
 .delete {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
   background-color: red;
   border-radius: 15px;
   min-height: 15vh;
   max-height: 15vh;
   width: 40vh;
   border: 1px solid black;
+}
+div .job {
+  opacity: 0.99;
 }
