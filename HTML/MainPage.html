@@ -25,32 +25,34 @@
             </h1>
         </header>
         
+        <!-- <Input type="text" placeholder="Enter Jobs Here" name="job" class="input-job">
+        <button class="job-button">Enter</button> -->
 
         <!-- list of text boxes for users to add information-->
-        <form>
+        <form class="jobScheduler">
         <div class="jobs" class="enter-job">
             <h2>Enter your next job to do:</h2>
             
-            <div class = "entries">
-                <Input type="text" placeholder="Enter Job" name="job" class="input-job">
-                <button class="job-button">Enter</button>
-                <div class="job-container">
-                    <ul class="job-list" id="start"
-                    ondragover="onDragOver(event);"
-                    ondrop = "onDrop(event);"></ul>
-                </div>
+            <div class = "job-container">
+                <ul class="job-list" id="start">
+                    <Input type="text" placeholder="Enter Jobs Here" name="job" class="input-job">
+                    <button class="job-button">Enter</button>
+                </ul>
+
+            
+                
             </div>    
         </div>
 
         <div class="jobs" class="jobs-started">
             <h2>Started:</h2>
-            <div class = "entries">
+            
                 <div class="job-container">
+                    
                     <ul class="job-list"
                     ondragover="onDragOver(event);"
                     ondrop = "onDrop(event);"></ul>
                 </div>
-            </div>
 
         </div>
 
@@ -58,26 +60,24 @@
 
             <h2>Review:</h2>
 
-            <div class = "entries">
                 <div class="job-container">
+                    
                     <ul class="job-list"
                     ondragover="onDragOver(event);"
                     ondrop = "onDrop(event);"></ul>
                 </div>
-            </div>
         </div>
 
         <div class="jobs" class="jobs-completed">
 
             <h2>Completed:</h2>
 
-            <div class = "entries">
                 <div class="job-container">
+                    
                     <ul class="job-list"
                     ondragover="onDragOver(event);"
                     ondrop = "onDrop(event);"></ul>
                 </div>
-            </div>
         </div>
         </form>
         <form>

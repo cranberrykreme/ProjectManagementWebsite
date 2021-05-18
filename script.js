@@ -75,7 +75,7 @@ function onDrop(event) {
 
     const draggableElement = document.getElementById(id);
 
-    const dropzone = event.target;
+    const dropzone = event.target; // conditional check 
 
     console.log("The target is: " + event.target);
 
